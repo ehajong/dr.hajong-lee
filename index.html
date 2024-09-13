@@ -1,12 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Hajong Lee, MD - Coming Soon</title>
+    <title>Dr. Hajong Lee, MD</title> <!-- This is the browser tab title -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
         body {
             margin: 0;
             padding: 0;
@@ -21,7 +19,6 @@
             position: relative;
         }
 
-        /* Apply blur only to the background image */
         .background {
             background: url('background.jpg') no-repeat center center/cover;
             filter: blur(8px);
@@ -30,7 +27,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: -1; /* Ensure background stays behind content */
+            z-index: -1;
         }
 
         .overlay {
@@ -49,27 +46,13 @@
             animation: fadeIn 2s ease-in-out;
         }
 
-        header {
-            position: absolute;
-            top: 20px;
-            width: 100%;
-            text-align: center;
-            font-size: 1.5rem;
-            font-weight: 600;
-        }
-
         h1 {
             font-size: 3rem;
             letter-spacing: 0.1rem;
         }
 
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
         .progress-bar {
-            width: 85%; /* Slightly longer progress bar */
+            width: 85%;
             height: 10px;
             background-color: rgba(255, 255, 255, 0.3);
             border-radius: 5px;
@@ -81,36 +64,7 @@
         .progress {
             height: 100%;
             background-color: #4caf50;
-            width: 0;
-            animation: fillBar 3s ease-in-out forwards;
-            position: relative;
-        }
-
-        .highlight {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 10%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.5);
-            filter: blur(5px);
-            animation: moveHighlight 2s linear infinite;
-            animation-delay: 3s; /* Starts after the bar has filled */
-        }
-
-        @keyframes fillBar {
-            to {
-                width: 95%;
-            }
-        }
-
-        @keyframes moveHighlight {
-            0% {
-                left: 0;
-            }
-            100% {
-                left: 95%;
-            }
+            width: 95%;
         }
 
         .notify-btn {
@@ -119,9 +73,10 @@
             border: 2px solid #3498db;
             padding: 10px 20px;
             border-radius: 25px;
-            cursor: pointer;
+            text-decoration: none; /* Remove underline */
             font-size: 1rem;
-            margin: 20px auto;
+            display: inline-block;
+            margin-top: 40px; /* Add space before the Notify Me button */
             transition: background-color 0.3s, color 0.3s;
         }
 
@@ -131,27 +86,14 @@
         }
 
         .social-icons {
-            margin-top: 20px;
+            margin-top: 30px; /* Add space between Notify Me and social icons */
         }
 
         .social-icons img {
-            margin: 0 10px;
-            width: 30px;
-            height: 30px;
-            vertical-align: middle;
-        }
-
-        footer {
-            margin-top: 30px;
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
-
-        footer img {
-            border-radius: 50%;
-            width: 18px; /* Smaller flags */
-            height: 18px;
-            vertical-align: middle;
+            margin: 0 15px; /* Add space between the icons */
+            width: 40px;
+            height: 40px;
+            border-radius: 50%; /* Make icons circular */
         }
 
         @keyframes fadeIn {
@@ -161,20 +103,15 @@
     </style>
 </head>
 <body>
-    <div class="background"></div> <!-- Background image with blur -->
+    <div class="background"></div>
     <div class="overlay"></div>
-    <header>Dr. Hajong Lee, MD</header>
     <div class="content">
         <h1>Coming Soon</h1>
-        <p>Site Nearly Ready</p>
 
         <div class="progress-bar">
-            <div class="progress">
-                <div class="highlight"></div>
-            </div>
+            <div class="progress"></div>
         </div>
 
-        <!-- Link to Google Form -->
         <a href="https://forms.gle/WYszw3iUNhhYpq9f7" target="_blank" class="notify-btn">Notify Me!</a>
 
         <div class="social-icons">
@@ -188,14 +125,6 @@
                 <img src="youtube_icon.png" alt="YouTube">
             </a>
         </div>
-
-        <footer>
-            &copy; 2024<br>
-            Dr. Hajong Lee, MD<br>
-            <img src="https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-xl.png" alt="USA Flag"> +1 (917) 436-0741 |
-            <img src="https://www.countryflags.com/wp-content/uploads/south-korea-flag-png-xl.png" alt="South Korea Flag"> +82 (10) 8483-1108<br>
-            hlee9@sgu.edu | ehajong@gmail.com
-        </footer>
     </div>
 </body>
 </html>
