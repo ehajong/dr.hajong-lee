@@ -92,7 +92,7 @@
             background: rgba(255, 255, 255, 0.5);
             filter: blur(5px);
             animation: moveHighlight 2s linear infinite;
-            animation-delay: 3s; /* Starts after the bar has filled */
+            animation-delay: 3s;
         }
 
         @keyframes fillBar {
@@ -132,8 +132,12 @@
             margin-top: 30px;
         }
 
-        .social-icons img {
+        .social-icons a {
+            display: inline-block;
             margin: 0 15px;
+        }
+
+        .social-icons img {
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -147,8 +151,8 @@
 
         footer img {
             border-radius: 50%;
-            width: 18px;
-            height: 18px;
+            width: 20px;
+            height: 20px;
             vertical-align: middle;
         }
 
@@ -166,7 +170,7 @@
     
     <div class="content">
         <h1>Coming Soon</h1>
-        <p>Nearly there! Hang on!</p> <!-- Restored original text -->
+        <p>Nearly there! Hang on!</p> <!-- Updated text -->
 
         <div class="progress-bar">
             <div class="progress">
@@ -179,11 +183,9 @@
         <div class="social-icons">
             <a href="https://facebook.com/hajonglee" target="_blank">
                 <img src="facebook_icon.png" alt="Facebook">
-            </a>
-            <a href="https://instagram.com/hajonglee" target="_blank">
+            </a><a href="https://instagram.com/hajonglee" target="_blank">
                 <img src="instagram_icon.png" alt="Instagram">
-            </a>
-            <a href="https://youtube.com/hajonglee" target="_blank">
+            </a><a href="https://youtube.com/hajonglee" target="_blank">
                 <img src="youtube_icon.png" alt="YouTube">
             </a>
         </div>
@@ -191,9 +193,9 @@
         <footer>
             &copy; 2024<br>
             Dr. Hajong Lee, MD<br>
-            <img src="https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-xl.png" alt="USA Flag"> +1 (917) 436-0741 |
-            <img src="https://www.countryflags.com/wp-content/uploads/south-korea-flag-png-xl.png" alt="South Korea Flag"> +82 (10) 8483-1108<br>
-            hlee9@sgu.edu | ehajong@gmail.com
+            <img src="usa.png" alt="USA Flag"> +1 (917) 436-0741 •
+            <img src="korea.png" alt="South Korea Flag"> +82 (10) 8483-1108<br>
+            hlee9@sgu.edu • ehajong@gmail.com
         </footer>
     </div>
 </body>
