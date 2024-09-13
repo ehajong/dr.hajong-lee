@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Hajong Lee, MD</title> <!-- This is the browser tab title -->
+    <title>Dr. Hajong Lee, MD</title>
     <style>
         body {
             margin: 0;
@@ -46,9 +47,23 @@
             animation: fadeIn 2s ease-in-out;
         }
 
+        header {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
         h1 {
             font-size: 3rem;
             letter-spacing: 0.1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
         }
 
         .progress-bar {
@@ -73,10 +88,10 @@
             border: 2px solid #3498db;
             padding: 10px 20px;
             border-radius: 25px;
-            text-decoration: none; /* Remove underline */
+            text-decoration: none;
             font-size: 1rem;
             display: inline-block;
-            margin-top: 40px; /* Add space before the Notify Me button */
+            margin-top: 40px;
             transition: background-color 0.3s, color 0.3s;
         }
 
@@ -86,14 +101,27 @@
         }
 
         .social-icons {
-            margin-top: 30px; /* Add space between Notify Me and social icons */
+            margin-top: 30px;
         }
 
         .social-icons img {
-            margin: 0 15px; /* Add space between the icons */
+            margin: 0 15px;
             width: 40px;
             height: 40px;
-            border-radius: 50%; /* Make icons circular */
+            border-radius: 50%;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        footer img {
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
         }
 
         @keyframes fadeIn {
@@ -105,26 +133,15 @@
 <body>
     <div class="background"></div>
     <div class="overlay"></div>
+    
+    <header>Dr. Hajong Lee, MD</header> <!-- Restored the title -->
+    
     <div class="content">
         <h1>Coming Soon</h1>
+        <p>Nearly there. Hang on!</p> <!-- Restored original text -->
 
         <div class="progress-bar">
             <div class="progress"></div>
         </div>
 
-        <a href="https://forms.gle/WYszw3iUNhhYpq9f7" target="_blank" class="notify-btn">Notify Me!</a>
-
-        <div class="social-icons">
-            <a href="https://facebook.com/hajonglee" target="_blank">
-                <img src="facebook_icon.png" alt="Facebook">
-            </a>
-            <a href="https://instagram.com/hajonglee" target="_blank">
-                <img src="instagram_icon.png" alt="Instagram">
-            </a>
-            <a href="https://youtube.com/hajonglee" target="_blank">
-                <img src="youtube_icon.png" alt="YouTube">
-            </a>
-        </div>
-    </div>
-</body>
-</html>
+        <a href="https://forms.gle/WYszw
