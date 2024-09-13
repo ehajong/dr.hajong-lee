@@ -78,7 +78,14 @@
         .progress {
             height: 100%;
             background-color: #4caf50;
-            width: 95%;
+            width: 0;
+            animation: fillBar 3s ease-in-out forwards;
+        }
+
+        @keyframes fillBar {
+            to {
+                width: 95%;
+            }
         }
 
         .notify-btn {
